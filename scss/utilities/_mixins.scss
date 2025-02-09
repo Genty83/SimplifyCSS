@@ -1,8 +1,9 @@
-
+@use 'sass:map';
+@use 'utilities/config' as cfg;
 
 // Mixin for breakpoints
 @mixin responsive($breakpoint) {
-  $min-width: map.get($breakpoints, $breakpoint);
+  $min-width: map.get(cfg.$breakpoints, $breakpoint);
   @if $min-width {
     @media (min-width: $min-width) {
       @content;

@@ -1,11 +1,47 @@
 @use 'sass:map';
 @use '../utilities/_config' as cfg;
-@use '../utilities/mixins' as mixins; 
+@use '../utilities/mixins' as mixins;
 
 $maxColumns: map.get(cfg.$grid, maxColumns);
 $gutterSizes: map.get(cfg.$grid, gutterSizes);
+$breakpoints: cfg.$breakpoints;
 
+/* Simplify Grid System
+------------------------------------------------- */
+
+/* Grid Row */
 .grid-row {
   display: grid;
-  grid-template-columns: repeat($maxColumns, 1fr);
+  grid-template-columns: repeat(#{$maxColumns}, 1fr);
+}
+
+/* Column Starts */
+@for $i from 1 through $maxColumns {
+  .col-start-#{$i} {
+    grid-column-start: #{$i};
+  }
+}
+
+/* Gutter Sizes */
+@each $size, $value in $gutterSizes {
+  .gutter-#{$size} {
+    gap: #{$value};
+  }
+}
+
+/* Responsive Columns */
+@each $breakpoint, $min-width in $breakpoints {
+  @include mixins.responsive($breakpoint) {
+    @for $i from 1 through $maxColumns {
+      .col-#{$breakpoint}-#{$i} {
+        grid-column-end: span #{$i};
+      }
+    }
+
+    @for $i from 1 through $maxColumns {
+      .col-start-#{$breakpoint}-#{$i} {
+        grid-column-start: span #{$i};
+      }
+    }
+  }
 }
