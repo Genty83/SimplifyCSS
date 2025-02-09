@@ -1,119 +1,178 @@
+$theme: (
+light: (
+background: #f7fafc,
+text: #1a202c,
+primary: #3182ce,
+secondary: #2b6cb0,
+accent: #9f7aea,
+highlight: #f7fafc,
+muted: #e2e8f0,
+gray: #718096,
+grayDark: #1a202c,
+danger: #e53e3e,
+warning: #ed8936,
+success: #38a169,
+info: #3182ce
+),
+dark: (
+background: #1a202c,
+text: #cbd5e0,
+primary: #63b3ed,
+secondary: #4299e1,
+accent: #9f7aea,
+highlight: #1a202c,
+muted: #2d3748,
+gray: #cbd5e0,
+grayDark: #718096,
+danger: #e53e3e,
+warning: #ed8936,
+success: #38a169,
+info: #3182ce
+)
+);
 $breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  2xl: 1400px,
-  3xl: 1600px,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+2xl: 1400px,
+3xl: 1600px
 );
 $sizing: (
-  0: 0,
-  1: 0.25rem,
-  2: 0.5rem,
-  3: 0.75rem,
-  4: 1rem,
-  5: 1.25rem,
-  6: 1.5rem,
-  7: 1.75rem,
-  8: 2rem,
-  9: 2.25rem,
-  10: 2.5rem,
+0: 0,
+1: 0.25rem,
+2: 0.5rem,
+3: 0.75rem,
+4: 1rem,
+5: 1.25rem,
+6: 1.5rem,
+7: 1.75rem,
+8: 2rem,
+9: 2.25rem,
+10: 2.5rem,
+auto: auto
 );
 $border: (
-  widths: (
-    0: 0,
-    1: 0.125rem,
-    2: 0.25rem,
-    3: 0.5rem,
-    4: 1rem,
-    5: 2rem,
-  ),
-  radius: (
-    none: 0,
-    sm: 0.125rem,
-    md: 0.25rem,
-    lg: 0.5rem,
-    xl: 1rem,
-    2xl: 2rem,
-    3xl: 4rem,
-    full: 9999px,
-  ),
-  styles: (
-    none: none,
-    solid: solid,
-    dashed: dashed,
-    dotted: dotted,
-    double: double,
-    groove: groove,
-    ridge: ridge,
-    inset: inset,
-    outset: outset,
-  ),
+widths: (
+0: 0,
+1: 0.125rem,
+2: 0.25rem,
+3: 0.5rem,
+4: 1rem,
+5: 2rem
+),
+radius: (
+none: 0,
+sm: 0.125rem,
+md: 0.25rem,
+lg: 0.5rem,
+xl: 1rem,
+2xl: 2rem,
+3xl: 4rem,
+full: 9999px
+),
+styles: (
+none: none,
+solid: solid,
+dashed: dashed,
+dotted: dotted,
+double: double,
+groove: groove,
+ridge: ridge,
+inset: inset,
+outset: outset
+)
+);
+$outline: (
+widths: (
+0: 0,
+1: 0.125rem,
+2: 0.25rem,
+3: 0.5rem,
+4: 1rem,
+5: 2rem
+),
+styles: (
+none: none,
+solid: solid,
+dashed: dashed,
+dotted: dotted,
+double: double,
+groove: groove,
+ridge: ridge,
+inset: inset,
+outset: outset
+),
+offset: (
+0: 0,
+1: 0.125rem,
+2: 0.25rem,
+3: 0.5rem,
+4: 1rem
+)
 );
 $grid: (
-  maxColumns: 12,
-  gutterSizes: (
-    0: 0,
-    1: 0.25rem,
-    2: 0.5rem,
-    3: 0.75rem,
-    4: 1rem,
-    5: 1.25rem,
-    6: 1.5rem,
-    7: 1.75rem,
-    8: 2rem,
-    9: 2.25rem,
-    10: 2.5rem,
-  ),
+maxColumns: 12,
+gutterSizes: (
+0: 0,
+1: 0.25rem,
+2: 0.5rem,
+3: 0.75rem,
+4: 1rem,
+5: 1.25rem,
+6: 1.5rem,
+7: 1.75rem,
+8: 2rem,
+9: 2.25rem,
+10: 2.5rem
+)
 );
 $typography: (
-  fontSizes: (
-    xs: 0.75rem,
-    sm: 0.875rem,
-    md: 1rem,
-    lg: 1.125rem,
-    xl: 1.25rem,
-    2xl: 1.5rem,
-    3xl: 1.875rem,
-    4xl: 2.25rem,
-    5xl: 3rem,
-    6xl: 4rem,
-    7xl: 5rem,
-    8xl: 6rem,
-    9xl: 8rem,
-  ),
-  fontWeights: (
-    1: 100,
-    2: 200,
-    3: 300,
-    4: 400,
-    5: 500,
-    6: 600,
-    7: 700,
-    8: 800,
-    9: 900,
-  ),
-  lineHeights: (
-    none: 1,
-    tight: 1.25,
-    snug: 1.375,
-    normal: 1.5,
-    relaxed: 1.625,
-    loose: 2,
-  ),
-  letterSpacings: (
-    tighter: -0.05em,
-    tight: -0.025em,
-    normal: 0,
-    wide: 0.025em,
-    wider: 0.05em,
-    widest: 0.1em,
-  ),
-  fontFamily: (
-    sans:
-      "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    serif: "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
-    mono:
-      "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  ),
+fontSizes: (
+xs: 0.75rem,
+sm: 0.875rem,
+md: 1rem,
+lg: 1.125rem,
+xl: 1.25rem,
+2xl: 1.5rem,
+3xl: 1.875rem,
+4xl: 2.25rem,
+5xl: 3rem,
+6xl: 4rem,
+7xl: 5rem,
+8xl: 6rem,
+9xl: 8rem
+),
+fontWeights: (
+1: 100,
+2: 200,
+3: 300,
+4: 400,
+5: 500,
+6: 600,
+7: 700,
+8: 800,
+9: 900
+),
+lineHeights: (
+none: 1,
+tight: 1.25,
+snug: 1.375,
+normal: 1.5,
+relaxed: 1.625,
+loose: 2
+),
+letterSpacings: (
+tighter: -0.05em,
+tight: -0.025em,
+normal: 0,
+wide: 0.025em,
+wider: 0.05em,
+widest: 0.1em
+),
+fontFamily: (
+sans: "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+serif: "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
+mono: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+)
 );

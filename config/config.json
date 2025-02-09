@@ -1,4 +1,36 @@
 {
+  "theme": {
+    "light": {
+      "background": "#f7fafc",
+      "text": "#1a202c",
+      "primary": "#3182ce",
+      "secondary": "#2b6cb0",
+      "accent": "#9f7aea",
+      "highlight": "#f7fafc",
+      "muted": "#e2e8f0",
+      "gray": "#718096",
+      "grayDark": "#1a202c",
+      "danger": "#e53e3e",
+      "warning": "#ed8936",
+      "success": "#38a169",
+      "info": "#3182ce"
+    },
+    "dark": {
+      "background": "#1a202c",
+      "text": "#cbd5e0",
+      "primary": "#63b3ed",
+      "secondary": "#4299e1",
+      "accent": "#9f7aea",
+      "highlight": "#1a202c",
+      "muted": "#2d3748",
+      "gray": "#cbd5e0",
+      "grayDark": "#718096",
+      "danger": "#e53e3e",
+      "warning": "#ed8936",
+      "success": "#38a169",
+      "info": "#3182ce"
+    }
+  },
   "breakpoints": {
     "sm": "576px",
     "md": "768px",
@@ -8,6 +40,7 @@
     "3xl": "1600px"
   },
   "sizing": {
+    "auto": "auto",
     "0": "0",
     "1": "0.25rem",
     "2": "0.5rem",
@@ -49,6 +82,34 @@
       "ridge": "ridge",
       "inset": "inset",
       "outset": "outset"
+    }
+  },
+  "outline": {
+    "widths": {
+      "0": "0",
+      "1": "0.125rem",
+      "2": "0.25rem",
+      "3": "0.5rem",
+      "4": "1rem",
+      "5": "2rem"
+    },
+    "styles": {
+      "none": "none",
+      "solid": "solid",
+      "dashed": "dashed",
+      "dotted": "dotted",
+      "double": "double",
+      "groove": "groove",
+      "ridge": "ridge",
+      "inset": "inset",
+      "outset": "outset"
+    },
+    "offset": {
+      "0": "0",
+      "1": "0.125rem",
+      "2": "0.25rem",
+      "3": "0.5rem",
+      "4": "1rem"
     }
   },
   "grid": {

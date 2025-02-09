@@ -1,0 +1,102 @@
+@use "sass:map";
+@use "../utilities/mixins" as mixins;
+@use "../utilities/variables" as *;
+
+/*
+Simplify Container System
+---------------------------------------------
+*/
+.container {
+  display: grid;
+  align-items: first baseline;
+}
+
+/* Widths */
+@each $key, $value in $percentageWidths {
+  .w-#{$key} {
+    width: $value;
+    max-width: $value;
+  }
+}
+
+/* Heights */
+@each $key, $value in $percentageWidths {
+  .h-#{$key} {
+    height: $value;
+    max-height: $value;
+  }
+}
+
+/* Max Widths */
+@each $key, $value in $percentageWidths {
+  .max-w-#{$key} {
+    max-width: $value;
+  }
+}
+
+/* Max Heights */
+@each $key, $value in $percentageWidths {
+  .max-h-#{$key} {
+    max-height: $value;
+  }
+}
+
+/* Min Widths */
+@each $key, $value in $percentageWidths {
+  .min-w-#{$key} {
+    min-width: $value;
+  }
+}
+
+/* Min Heights */
+@each $key, $value in $percentageWidths {
+  .min-h-#{$key} {
+    min-height: $value;
+  }
+}
+
+/**
+ * Container Responsive Widths
+ * ---------------------------------------------
+ */
+@each $breakpoint, $min-width in $breakpoints {
+  @include mixins.responsive($breakpoint) {
+    @each $key, $value in $percentageWidths {
+      .w-#{$breakpoint}-#{$key} {
+        width: $value;
+        max-width: $value;
+      }
+    }
+
+    @each $key, $value in $percentageWidths {
+      .h-#{$breakpoint}-#{$key} {
+        height: $value;
+        max-height: $value;
+      }
+    }
+
+    @each $key, $value in $percentageWidths {
+      .max-w-#{$breakpoint}-#{$key} {
+        max-width: $value;
+      }
+    }
+
+    @each $key, $value in $percentageWidths {
+      .max-h-#{$breakpoint}-#{$key} {
+        max-height: $value;
+      }
+    }
+
+    @each $key, $value in $percentageWidths {
+      .min-w-#{$breakpoint}-#{$key} {
+        min-width: $value;
+      }
+    }
+
+    @each $key, $value in $percentageWidths {
+      .min-h-#{$breakpoint}-#{$key} {
+        min-height: $value;
+      }
+    }
+  }
+}

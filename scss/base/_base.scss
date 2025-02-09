@@ -5,29 +5,35 @@
 Padding 
 -------------------------------------------------
 */
+/* 
+Padding 
+-------------------------------------------------
+*/
 @each $size in map.keys($sizing) {
-  .p-#{$size} {
-    padding: map.get($sizing, $size);
-  }
-  .pt-#{$size} {
-    padding-top: map.get($sizing, $size);
-  }
-  .pr-#{$size} {
-    padding-right: map.get($sizing, $size);
-  }
-  .pb-#{$size} {
-    padding-bottom: map.get($sizing, $size);
-  }
-  .pl-#{$size} {
-    padding-left: map.get($sizing, $size);
-  }
-  .px-#{$size} {
-    padding-left: map.get($sizing, $size);
-    padding-right: map.get($sizing, $size);
-  }
-  .py-#{$size} {
-    padding-top: map.get($sizing, $size);
-    padding-bottom: map.get($sizing, $size);
+  @if $size != 'auto' {
+    .p-#{$size} {
+      padding: map.get($sizing, $size);
+    }
+    .pt-#{$size} {
+      padding-top: map.get($sizing, $size);
+    }
+    .pr-#{$size} {
+      padding-right: map.get($sizing, $size);
+    }
+    .pb-#{$size} {
+      padding-bottom: map.get($sizing, $size);
+    }
+    .pl-#{$size} {
+      padding-left: map.get($sizing, $size);
+    }
+    .px-#{$size} {
+      padding-left: map.get($sizing, $size);
+      padding-right: map.get($sizing, $size);
+    }
+    .py-#{$size} {
+      padding-top: map.get($sizing, $size);
+      padding-bottom: map.get($sizing, $size);
+    }
   }
 }
 
