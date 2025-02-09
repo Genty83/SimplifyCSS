@@ -1,7 +1,5 @@
 @use 'sass:map';
-@use '../utilities/config' as cfg;
-
-$sizing: cfg.$sizing;
+@use '../utilities/variables' as *;
 
 /* 
 Padding 
@@ -60,5 +58,78 @@ Margin
   .my-#{$size} {
     margin-top: map.get($sizing, $size);
     margin-bottom: map.get($sizing, $size);
+  }
+}
+
+/*
+Border
+-------------------------------------------------
+*/
+/* Width */
+@each $size in map.keys($borderWidths) {
+  .bd-#{$size} {
+    border-width: map.get($borderWidths, $size);
+  }
+  .bd-t-#{$size} {
+    border-top-width: map.get($borderWidths, $size);
+  }
+  .bd-r-#{$size} {
+    border-right-width: map.get($borderWidths, $size);
+  }
+  .bd-b-#{$size} {
+    border-bottom-width: map.get($borderWidths, $size);
+  }
+  .bd-l-#{$size} {
+    border-left-width: map.get($borderWidths, $size);
+  }
+}
+
+/* Radius */
+@each $size in map.keys($borderRadius) {
+  .br-#{$size} {
+    border-radius: map.get($borderRadius, $size);
+  }
+
+  .br-t-#{$size} {
+    border-top-left-radius: map.get($borderRadius, $size);
+    border-top-right-radius: map.get($borderRadius, $size);
+  }
+
+  .br-r-#{$size} {
+    border-top-right-radius: map.get($borderRadius, $size);
+    border-bottom-right-radius: map.get($borderRadius, $size);
+  }
+
+  .br-b-#{$size} {
+    border-bottom-right-radius: map.get($borderRadius, $size);
+    border-bottom-left-radius: map.get($borderRadius, $size);
+  }
+
+  .br-l-#{$size} {
+    border-top-left-radius: map.get($borderRadius, $size);
+    border-bottom-left-radius: map.get($borderRadius, $size);
+  }
+
+  .br-tl-#{$size} {
+    border-top-left-radius: map.get($borderRadius, $size);
+  }
+
+  .br-tr-#{$size} {
+    border-top-right-radius: map.get($borderRadius, $size);
+  }
+
+  .br-br-#{$size} {
+    border-bottom-right-radius: map.get($borderRadius, $size);
+  }
+
+  .br-bl-#{$size} {
+    border-bottom-left-radius: map.get($borderRadius, $size);
+  }
+}
+
+/* Styles */
+@each $style in map.keys($borderStyles) {
+  .bd-#{$style} {
+    border-style: map.get($borderStyles, $style);
   }
 }

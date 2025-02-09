@@ -4,9 +4,9 @@
 // Config variables
 $breakpoints: cfg.$breakpoints;
 $sizing: cfg.$sizing;
-$borderWidths: map.get(cfg.$border, borderWidths);
-$borderRadius: map.get(cfg.$border, borderRadius);
-$borderStyles: map.get(cfg.$border, borderStyles);
+$borderWidths: map.get(cfg.$border, widths);
+$borderRadius: map.get(cfg.$border, radius);
+$borderStyles: map.get(cfg.$border, styles);
 
 $maxColumns: map.get(cfg.$grid, maxColumns);
 $gutterSizes: map.get(cfg.$grid, gutterSizes);
