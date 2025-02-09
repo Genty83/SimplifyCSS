@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use '../utilities/_config' as cfg;
+@use '../utilities/mixins' as mixins; 
+
+$maxColumns: map.get(cfg.$grid, maxColumns);
+$gutterSizes: map.get(cfg.$grid, gutterSizes);
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat($maxColumns, 1fr);
+}
