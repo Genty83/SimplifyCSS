@@ -1,19 +1,25 @@
 @use 'sass:map';
-@use '../utilities/_config' as cfg;
+@use '../utilities/variables' as *;
 @use '../utilities/mixins' as mixins;
 
-$maxColumns: map.get(cfg.$grid, maxColumns);
-$gutterSizes: map.get(cfg.$grid, gutterSizes);
-$breakpoints: cfg.$breakpoints;
 
 /* Simplify Grid System
-------------------------------------------------- */
+------------------------------------------------- 
+*/
 
 /* Grid Row */
 .grid-row {
   display: grid;
   grid-template-columns: repeat(#{$maxColumns}, 1fr);
 }
+
+/* Columns xs */
+@for $i from 1 through $maxColumns {
+  .col-#{$i} {
+    grid-column-end: span #{$i};
+  }
+}
+
 
 /* Column Starts */
 @for $i from 1 through $maxColumns {

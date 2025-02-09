@@ -1,0 +1,14 @@
+@use '../utilities/config' as cfg;
+@use 'sass:map';
+
+// Config variables
+$breakpoints: cfg.$breakpoints;
+$sizing: cfg.$sizing;
+$borderWidths: map.get(cfg.$border, borderWidths);
+$borderRadius: map.get(cfg.$border, borderRadius);
+$borderStyles: map.get(cfg.$border, borderStyles);
+
+$maxColumns: map.get(cfg.$grid, maxColumns);
+$gutterSizes: map.get(cfg.$grid, gutterSizes);
+
+// Standard variables

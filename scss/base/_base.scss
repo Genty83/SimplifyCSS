@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use '../utilities/config' as cfg;
+
+$sizing: cfg.$sizing;
+
+/* 
+Padding 
+-------------------------------------------------
+*/
+@each $size in map.keys($sizing) {
+  .p-#{$size} {
+    padding: map.get($sizing, $size);
+  }
+  .pt-#{$size} {
+    padding-top: map.get($sizing, $size);
+  }
+  .pr-#{$size} {
+    padding-right: map.get($sizing, $size);
+  }
+  .pb-#{$size} {
+    padding-bottom: map.get($sizing, $size);
+  }
+  .pl-#{$size} {
+    padding-left: map.get($sizing, $size);
+  }
+  .px-#{$size} {
+    padding-left: map.get($sizing, $size);
+    padding-right: map.get($sizing, $size);
+  }
+  .py-#{$size} {
+    padding-top: map.get($sizing, $size);
+    padding-bottom: map.get($sizing, $size);
+  }
+}
+
+/*
+Margin
+-------------------------------------------------
+*/
+@each $size in map.keys($sizing) {
+  .m-#{$size} {
+    margin: map.get($sizing, $size);
+  }
+  .mt-#{$size} {
+    margin-top: map.get($sizing, $size);
+  }
+  .mr-#{$size} {
+    margin-right: map.get($sizing, $size);
+  }
+  .mb-#{$size} {
+    margin-bottom: map.get($sizing, $size);
+  }
+  .ml-#{$size} {
+    margin-left: map.get($sizing, $size);
+  }
+  .mx-#{$size} {
+    margin-left: map.get($sizing, $size);
+    margin-right: map.get($sizing, $size);
+  }
+  .my-#{$size} {
+    margin-top: map.get($sizing, $size);
+    margin-bottom: map.get($sizing, $size);
+  }
+}

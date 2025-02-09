@@ -19,6 +19,37 @@ $sizing: (
 9: 2.25rem,
 10: 2.5rem
 );
+$border: (
+widths: (
+0: 0,
+1: 0.125rem,
+2: 0.25rem,
+3: 0.5rem,
+4: 1rem,
+5: 2rem
+),
+radius: (
+none: 0,
+sm: 0.125rem,
+md: 0.25rem,
+lg: 0.5rem,
+xl: 1rem,
+2xl: 2rem,
+3xl: 4rem,
+full: 9999px
+),
+styles: (
+none: none,
+solid: solid,
+dashed: dashed,
+dotted: dotted,
+double: double,
+groove: groove,
+ridge: ridge,
+inset: inset,
+outset: outset
+)
+);
 $grid: (
 maxColumns: 12,
 gutterSizes: (
@@ -52,15 +83,15 @@ xl: 1.25rem,
 9xl: 8rem
 ),
 fontWeights: (
-hairline: 100,
-thin: 200,
-light: 300,
-normal: 400,
-medium: 500,
-semibold: 600,
-bold: 700,
-extrabold: 800,
-black: 900
+1: 100,
+2: 200,
+3: 300,
+4: 400,
+5: 500,
+6: 600,
+7: 700,
+8: 800,
+9: 900
 ),
 lineHeights: (
 none: 1,
