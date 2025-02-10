@@ -9,6 +9,8 @@ Simplify Container System
 .container {
   display: grid;
   align-items: first baseline;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Widths */

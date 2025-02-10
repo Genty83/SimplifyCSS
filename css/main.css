@@ -4017,10 +4017,159 @@ table {
   outline-color: oklch(14.7% 0.004 49.25deg);
 }
 
-/* 
-Padding 
--------------------------------------------------
-*/
+/* Font Families */
+.ft-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.ft-serif {
+  font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.ft-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* Font Sizes */
+.ft-size-xs {
+  font-size: 0.75rem;
+}
+
+.ft-size-sm {
+  font-size: 0.875rem;
+}
+
+.ft-size-md {
+  font-size: 1rem;
+}
+
+.ft-size-lg {
+  font-size: 1.125rem;
+}
+
+.ft-size-xl {
+  font-size: 1.25rem;
+}
+
+.ft-size-2xl {
+  font-size: 1.5rem;
+}
+
+.ft-size-3xl {
+  font-size: 1.875rem;
+}
+
+.ft-size-4xl {
+  font-size: 2.25rem;
+}
+
+.ft-size-5xl {
+  font-size: 3rem;
+}
+
+.ft-size-6xl {
+  font-size: 4rem;
+}
+
+.ft-size-7xl {
+  font-size: 5rem;
+}
+
+.ft-size-8xl {
+  font-size: 6rem;
+}
+
+.ft-size-9xl {
+  font-size: 8rem;
+}
+
+/* Font Weights */
+.ft-weight-1 {
+  font-weight: 100;
+}
+
+.ft-weight-2 {
+  font-weight: 200;
+}
+
+.ft-weight-3 {
+  font-weight: 300;
+}
+
+.ft-weight-4 {
+  font-weight: 400;
+}
+
+.ft-weight-5 {
+  font-weight: 500;
+}
+
+.ft-weight-6 {
+  font-weight: 600;
+}
+
+.ft-weight-7 {
+  font-weight: 700;
+}
+
+.ft-weight-8 {
+  font-weight: 800;
+}
+
+.ft-weight-9 {
+  font-weight: 900;
+}
+
+/* Line Heights */
+.ln-height-none {
+  line-height: 1;
+}
+
+.ln-height-tight {
+  line-height: 1.25;
+}
+
+.ln-height-snug {
+  line-height: 1.375;
+}
+
+.ln-height-normal {
+  line-height: 1.5;
+}
+
+.ln-height-relaxed {
+  line-height: 1.625;
+}
+
+.ln-height-loose {
+  line-height: 2;
+}
+
+/* Letter Spacings */
+.lt-spacing-tighter {
+  letter-spacing: -0.05em;
+}
+
+.lt-spacing-tight {
+  letter-spacing: -0.025em;
+}
+
+.lt-spacing-normal {
+  letter-spacing: 0;
+}
+
+.lt-spacing-wide {
+  letter-spacing: 0.025em;
+}
+
+.lt-spacing-wider {
+  letter-spacing: 0.05em;
+}
+
+.lt-spacing-widest {
+  letter-spacing: 0.1em;
+}
+
 /* 
 Padding 
 -------------------------------------------------
@@ -5209,6 +5358,8 @@ Simplify Container System
 .container {
   display: grid;
   align-items: first baseline;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Widths */

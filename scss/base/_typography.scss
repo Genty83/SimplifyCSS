@@ -1,0 +1,38 @@
+@use "sass:map";
+@use "sass:string";
+@use "../utilities/variables" as *;
+
+/* Font Families */
+@each $key, $value in $fontFamilies {
+  .ft-#{$key} {
+    font-family: string.unquote($value);
+  }
+}
+
+/* Font Sizes */
+@each $key, $value in $fontSizes {
+  .ft-size-#{$key} {
+    font-size: $value;
+  }
+}
+
+/* Font Weights */
+@each $key, $value in $fontWeights {
+  .ft-weight-#{$key} {
+    font-weight: $value;
+  }
+}
+
+/* Line Heights */
+@each $key, $value in $lineHeights {
+  .ln-height-#{$key} {
+    line-height: $value;
+  }
+}
+
+/* Letter Spacings */
+@each $key, $value in $letterSpacings {
+  .lt-spacing-#{$key} {
+    letter-spacing: $value;
+  }
+}

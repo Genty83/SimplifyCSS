@@ -10,6 +10,11 @@ $borderStyles: map.get(cfg.$border, styles);
 $outlineWidths: map.get(cfg.$outline, widths);
 $outlineStyles: map.get(cfg.$outline, styles);
 $outlineOffset: map.get(cfg.$outline, offset);
+$fontFamilies: map.get(cfg.$typography, fontFamily);
+$fontSizes: map.get(cfg.$typography, fontSizes);
+$fontWeights: map.get(cfg.$typography, fontWeights);
+$lineHeights: map.get(cfg.$typography, lineHeights);
+$letterSpacings: map.get(cfg.$typography, letterSpacings);
 
 $maxColumns: map.get(cfg.$grid, maxColumns);
 $gutterSizes: map.get(cfg.$grid, gutterSizes);
