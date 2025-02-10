@@ -1,6 +1,27 @@
 @use "sass:map";
 @use "sass:string";
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as mixins;
+
+/* Headers */
+h1 {
+  @include mixins.header-styles(h1);
+}
+h2 {
+  @include mixins.header-styles(h2);
+}
+h3 {
+  @include mixins.header-styles(h3);
+}
+h4 {
+  @include mixins.header-styles(h4);
+}
+h5 {
+  @include mixins.header-styles(h5);
+}
+h6 {
+  @include mixins.header-styles(h6);
+}
 
 /* Font Families */
 @each $key, $value in $fontFamilies {

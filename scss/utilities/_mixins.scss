@@ -1,12 +1,19 @@
 @use 'sass:map';
-@use 'utilities/config' as cfg;
+@use 'utilities/variables' as *;
 
 // Mixin for breakpoints
 @mixin responsive($breakpoint) {
-  $min-width: map.get(cfg.$breakpoints, $breakpoint);
+  $min-width: map.get($breakpoints, $breakpoint);
   @if $min-width {
     @media (min-width: $min-width) {
       @content;
     }
   }
+}
+
+// Mixin to apply header styles dynamically
+@mixin header-styles($header) {
+  font-size: map.get(map.get($headerSizes, $header), fontSize);
+  font-weight: map.get(map.get($headerSizes, $header), fontWeight);
+  line-height: map.get(map.get($headerSizes, $header), lineHeight);
 }

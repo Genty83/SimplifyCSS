@@ -128,6 +128,38 @@ gutterSizes: (
 )
 );
 $typography: (
+headerSizes: (
+h1: (
+fontSize: 2.25rem,
+fontWeight: 700,
+lineHeight: 1.2
+),
+h2: (
+fontSize: 1.875rem,
+fontWeight: 700,
+lineHeight: 1.2
+),
+h3: (
+fontSize: 1.5rem,
+fontWeight: 700,
+lineHeight: 1.2
+),
+h4: (
+fontSize: 1.25rem,
+fontWeight: 700,
+lineHeight: 1.2
+),
+h5: (
+fontSize: 1rem,
+fontWeight: 700,
+lineHeight: 1.2
+),
+h6: (
+fontSize: 0.875rem,
+fontWeight: 700,
+lineHeight: 1.2
+)
+),
 fontSizes: (
 xs: 0.75rem,
 sm: 0.875rem,

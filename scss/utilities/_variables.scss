@@ -15,6 +15,7 @@ $fontSizes: map.get(cfg.$typography, fontSizes);
 $fontWeights: map.get(cfg.$typography, fontWeights);
 $lineHeights: map.get(cfg.$typography, lineHeights);
 $letterSpacings: map.get(cfg.$typography, letterSpacings);
+$headerSizes: map.get(cfg.$typography, headerSizes);
 
 $maxColumns: map.get(cfg.$grid, maxColumns);
 $gutterSizes: map.get(cfg.$grid, gutterSizes);
