@@ -13,6 +13,18 @@
   grid-template-columns: repeat(#{$maxColumns}, 1fr);
 }
 
+/* Grid variations */
+.grid-auto-cols {
+  display: grid;
+  grid-auto-columns: auto;
+}
+
+.grid-auto-rows {
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+
 /* Columns xs */
 @for $i from 1 through $maxColumns {
   .col-#{$i} {

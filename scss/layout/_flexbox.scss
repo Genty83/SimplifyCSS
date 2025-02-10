@@ -56,9 +56,30 @@
   }
 }
 
+/* Justify Items */
+@each $key, $value in $justify {
+  .justify-items-#{$key} {
+    justify-items: $value;
+  }
+}
+
 /* Align Items */
 @each $key, $value in $alignments {
   .align-#{$key} {
     align-items: $value;
+  }
+}
+
+/* Align Content */
+@each $key, $value in $alignments {
+  .align-content-#{$key} {
+    align-content: $value;
+  }
+}
+
+/* Order */
+@each $key, $value in $orderValues {
+  .order-#{$key} {
+    order: $value;
   }
 }

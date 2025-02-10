@@ -164,3 +164,17 @@ Border
     outline-offset: map.get($outlineOffsetNeg, $outline);
   }
 }
+
+/* Heights */
+@for $i from 1 through 10 {
+  .vh-#{$i * 10} {
+    height: #{$i * 10}vh;
+  }
+}
+
+/* Widths */
+@for $i from 1 through 10 {
+  .vw-#{$i * 10} {
+    width: #{$i * 10}vw;
+  }
+}
