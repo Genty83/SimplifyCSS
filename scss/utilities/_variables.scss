@@ -9,7 +9,8 @@ $borderRadius: map.get(cfg.$border, radius);
 $borderStyles: map.get(cfg.$border, styles);
 $outlineWidths: map.get(cfg.$outline, widths);
 $outlineStyles: map.get(cfg.$outline, styles);
-$outlineOffset: map.get(cfg.$outline, offset);
+$outlineOffsetPos: map.get(cfg.$outline, offsetPositive);
+$outlineOffsetNeg: map.get(cfg.$outline, offsetNegative);
 $fontFamilies: map.get(cfg.$typography, fontFamily);
 $fontSizes: map.get(cfg.$typography, fontSizes);
 $fontWeights: map.get(cfg.$typography, fontWeights);
@@ -311,6 +312,24 @@ $standardColors: (
   )
 );
 
+// Alignment
+$alignments: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch,
+);
+
+// Justify
+$justify: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
 
 // Percentage widths
 $percentageWidths: (

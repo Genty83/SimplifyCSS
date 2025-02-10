@@ -136,3 +136,31 @@ Border
     border-style: map.get($borderStyles, $style);
   }
 }
+
+/* Outline Widths */
+@each $outline in map.keys($outlineWidths) {
+  .ol-size-#{$outline} {
+    outline-width: map.get($outlineWidths, $outline);
+  }
+}
+
+/* Outline Styles */
+@each $outline in map.keys($outlineStyles) {
+  .ol-#{$outline} {
+    outline-style: map.get($outlineStyles, $outline);
+  }
+}
+
+/* Outline Offset Positive */
+@each $outline in map.keys($outlineOffsetPos) {
+  .ol-offset-pos-#{$outline} {
+    outline-offset: map.get($outlineOffsetPos, $outline);
+  }
+}
+
+/* Outline Offset Negative */
+@each $outline in map.keys($outlineOffsetNeg) {
+  .ol-offset-neg-#{$outline} {
+    outline-offset: map.get($outlineOffsetNeg, $outline);
+  }
+}

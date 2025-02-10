@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use 'utilities/variables' as *;
+
+/* Flexbox classes */
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+} 
+
+.flex-col-reverse {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.flex-row-wrap-reverse {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.flex-col-wrap-reverse {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
+
+/* Gap Sizes */
+@each $size, $value in $gutterSizes {
+  .gap-#{$size} {
+    gap: #{$value};
+  }
+}
+
+/* Justify Content */
+@each $key, $value in $justify {
+  .justify-#{$key} {
+    justify-content: $value;
+  }
+}
+
+/* Align Items */
+@each $key, $value in $alignments {
+  .align-#{$key} {
+    align-items: $value;
+  }
+}

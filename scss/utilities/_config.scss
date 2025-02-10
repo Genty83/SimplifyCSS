@@ -86,11 +86,11 @@ outset: outset
 $outline: (
 widths: (
 0: 0,
-1: 0.125rem,
-2: 0.25rem,
-3: 0.5rem,
-4: 1rem,
-5: 2rem
+1: 1px,
+2: 2px,
+3: 3px,
+4: 4px,
+5: 5px
 ),
 styles: (
 none: none,
@@ -103,12 +103,19 @@ ridge: ridge,
 inset: inset,
 outset: outset
 ),
-offset: (
+offsetPositive: (
 0: 0,
-1: 0.125rem,
-2: 0.25rem,
-3: 0.5rem,
-4: 1rem
+1: 1px,
+2: 2px,
+3: 3px,
+4: 4px
+),
+offsetNegative: (
+0: 0,
+1: -1px,
+2: -2px,
+3: -3px,
+4: -4px
 )
 );
 $grid: (
